@@ -11,33 +11,29 @@
     <script src="https://kit.fontawesome.com/2430e068ef.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <script src="main.js" defer></script>
-
 </haed>
 
 <body>
     <!-- Navbar -->
-    <nav id="navbar"></nav>
-
-
-    <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">Jindory</a>
-    </div>
-    <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">Work</li>
-        <li class="navbar__menu__item">Career</li>
-        <li class="navbar__menu__item">Archiving</li>
-    </ul>
-
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fab fa-diaspora"></i>
+            <a href="#">Jindory</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active">Home</li>
+            <li class="navbar__menu__item">About</li>
+            <li class="navbar__menu__item">Skills</li>
+            <li class="navbar__menu__item">Work</li>
+            <li class="navbar__menu__item">Career</li>
+            <li class="navbar__menu__item">Archiving</li>
+        </ul>
+    </nav>
     <!-- Home -->
     <section id="home">
-        <img src="images/profile.jpg" alt="Jindory profile photo" class="nome_avatar">
+        <img src="images/profile.jpg" alt="Jindory profile photo" class="home__avatar">
         <h1 class="home__title">안녕하세요.<br>개발자 윤진성입니다.</h1>
         <h2 class="home__description">아이디어를 프로그램으로 구현하고 싶은 Back-End 개발자입니다.<br>데이터 분석을 좋아하며, 다양한 데이터를 웹과 모바일에 구현하고 싶습니다.
         </h2>
@@ -47,130 +43,166 @@
     <!-- About -->
     <section id="about">
         <h1>About me</h1>
-        <p></p>
-        <div class="abount__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+        <<p>
+            </p>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="major__title">Front-end</div>
+                    <div class="major__description">HTML, CSS, Javascript<br>Jquery, Web APIs</div>
                 </div>
-                <div class="major__title">Front-end</div>
-                <div class="major__description">HTML, CSS, Javascript<br>Jquery, Web APIs</div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-server"></i>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="major__title">Back-end</div>
+                    <div class="major__description">Java Spring, Node.js</div>
                 </div>
-                <div class="major__title">Back-end</div>
-                <div class="major__description">Java Spring, Node.js</div>
             </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fas fa-dharmachakra"></i>
+            <div class="about__majors">
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-dharmachakra"></i>
+                    </div>
+                    <div class="major__title">Application</div>
+                    <div class="major__description">Data analysis, Web Crwaling</div>
                 </div>
-                <div class="major__title">Application</div>
-                <div class="major__description">Data analysis, Web Crwaling</div>
+                <div class="major">
+                    <div class="major__icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="major__title">Language</div>
+                    <div class="major__description">Korean,English</div>
+                </div>
+
             </div>
-        </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-            데이터를 다루는 서버개발자를 꿈꾸는 윤진성입니다.<br>
-            첫 프로그램 기초는 C언어로 시작했으며, 데이터 분석을 위해 Python을 공부하였으며, SKT AI 스피커 개발 프로젝트에 개발을 위해 Node.js를 배웠습니다.<br>
-            현재 회사에서 웹 프로그래머로써 Front End로 HTML,CSS,Javascript Back-End로 Java Spring, Oracle DB를 사용하여 개발자하고 있습니다.
-            프로그램을 구현하는데 있어서 언어는 큰 문제가 아니라고 생각하며, 구글링과 책을 참고하며 개발지식을 습득하고 있습니다.
-            <br><br>
-            지금까지 진행한 프로젝트는 아래와 같습니다.<br>
-        <ul>데이터 관련 : 프로배구 플레이오프 진출 요인 분석</ul>
-        <ul>API : SKT AI 스피커 컨텐츠 개발(음악퀴즈 프로그램)</ul>
-        <ul>웹 프로그래밍 : 서울시 공공자전거 조회 및 알림 프로그램</ul>
-        앞으로도 백엔드와 관련하여 지속적으로 개발공부를 임할 계획이며, 데이터 처리 및 분석을 결합한 프로그램 개발을 진행하고 싶습니다.
-        </p>
-        <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="frontEnd__title">Front-End</h3>
-                <div class="frontEnd">
-                    <div class="frontEnd_description">
-                        <span>HTML</span>
-                        <span>80%(원하는 기능 구현 가능)</span>
+    <section class="section" id="skills">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                데이터를 다루는 서버개발자를 꿈꾸는 윤진성입니다.<br>
+                첫 프로그램 기초는 C언어로 시작했으며, 데이터 분석을 위해 Python을 공부하였으며, SKT AI 스피커 개발 프로젝트에 개발을 위해 Node.js를 배웠습니다.<br>
+                현재 회사에서 웹 프로그래머로써 Front End로 HTML,CSS,Javascript Back-End로 Java Spring, Oracle DB를 사용하여 개발자하고 있습니다.
+                프로그램을 구현하는데 있어서 언어는 큰 문제가 아니라고 생각하며, 구글링과 책을 참고하며 개발지식을 습득하고 있습니다.
+                <br><br>
+                지금까지 진행한 프로젝트는 아래와 같습니다.<br>
+            <ul>데이터 관련 : 프로배구 플레이오프 진출 요인 분석</ul>
+            <ul>API : SKT AI 스피커 컨텐츠 개발(음악퀴즈 프로그램)</ul>
+            <ul>웹 프로그래밍 : 서울시 공공자전거 조회 및 알림 프로그램</ul>
+            앞으로도 백엔드와 관련하여 지속적으로 개발공부를 임할 계획이며, 데이터 처리 및 분석을 결합한 프로그램 개발을 진행하고 싶습니다.
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Front-End</h3>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
                         <div class="skill__bar">
-                            <div class="skill_value"></div>
+                            <div class="skill__value" style="width : 80%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(원하는 기능 구현 가능)</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width : 60%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(참고자료를 보며 구현 가능)</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>Javascript</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width : 95%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(업무에 활용 가능)</span>
                         </div>
                     </div>
                 </div>
-                <div class="frontEnd">
-                    <div class="frontEnd_description">
-                        <span>CSS</span>
-                        <span>60%(참고자료를 보며 구현 가능)</span>
+                <div class="skillset__middle">
+                    <h3 class="skillset__title">Back-End</h3>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>Java Spring</span>
+                            <span>80%</span>
+                        </div>
                         <div class="skill__bar">
-                            <div class="skill_value"></div>
+                            <div class="skill__value" style="width : 80%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(원하는 기능 구현 가능)</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>Node.js</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width : 60%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(참고자료를 보며 구현 가능)</span>
                         </div>
                     </div>
                 </div>
-                <div class="frontEnd">
-                    <div class="frontEnd_description">
-                        <span>Javascript</span>
-                        <span>95%(업무에 활용 가능)</span>
+                <div class="skillset__right">
+                    <h3 class="skillset__title">Data</h3>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>Web crwaling</span>
+                            <span>80%</span>
+                        </div>
                         <div class="skill__bar">
-                            <div class="skill_value"></div>
+                            <div class="skill__value" style="width : 80%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(원하는 기능 구현 가능)</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>Data Analysis</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width : 60%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(참고자료를 보며 구현 가능)</span>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__ability">
+                            <span>Oracle DB</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width : 95%;"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>(업무에 활용 가능)</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="skillset__middle">
-                <h3 class="backEnd__title">Back-End</h3>
-                <div class="backEnd">
-                    <div class="backEnd_description">
-                        <span>Java Spring</span>
-                        <span>80%(원하는 기능 구현 가능)</span>
-                        <div class="skill__bar">
-                            <div class="skill_value"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="backEnd">
-                    <div class="backEnd_description">
-                        <span>Node.js</span>
-                        <span>60%(참고자료를 보며 구현 가능)</span>
-                        <div class="skill__bar">
-                            <div class="skill_value"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skill__right">
-                <h3 class="Application__title">Application</h3>
-                <div class=Application">
-                    <div class="Application_description">
-                        <span>Web crwaling</span>
-                        <span>80%(원하는 기능 구현 가능)</span>
-                        <div class="skill__bar">
-                            <div class="skill_value"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=Application">
-                    <div class="Application_description">
-                        <span>Data Analysis</span>
-                        <span>60%(참고자료를 보며 구현 가능)</span>
-                        <div class="skill__bar">
-                            <div class="skill_value"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class=Application">
-                    <div class="Application_description">
-                        <span>Oracle DB</span>
-                        <span>95%(업무에 활용 가능)</span>
-                        <div class="skill__bar">
-                            <div class="skill_value"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- Wokrs -->
     <section id="project">
