@@ -320,7 +320,8 @@ section {
   width: 500px;
   height: 250px;
   margin: 2px;
-  background-color: var(--color-pastels-yellow);
+  border-radius: 6%;
+  background-color: var(--color-pastels-blue);
 }
 
 .project:hover .project__description {
