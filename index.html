@@ -37,7 +37,7 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <h1 class="home__title">윤진성 포트폴리오</h1>
+        <h1 class="home__title">윤진성<br>포트폴리오</h1>
         <img src="images/profile.jpg" alt="Jindory profile photo" class="home__avatar">
         <h1 class="home__greeting">안녕하세요.<br>개발자 윤진성입니다.</h1>
         <h2 class="home__description">아이디어를 프로그램으로 구현하고 싶은 Back-End 개발자입니다.<br>안정적인 서버관리로 다양한 데이터를 웹과 모바일에 구현하고 싶습니다.
@@ -47,6 +47,7 @@
 
     <!-- About -->
     <section id="about">
+        <div class="section__container">
         <h1>About me</h1>
             <div class="about__me">
                 <div class="my__Infomation">
@@ -106,6 +107,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- Skills -->
     <section class="section" id="skills">
@@ -151,7 +153,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="updown"></div>
                 <div class="skillset__middle">
                     <h3 class="skillset__title">Back-End</h3>
                     <div class="skill__content">
@@ -163,7 +164,7 @@
                             <div class="skill__value" style="width : 80%;"></div>
                         </div>
                         <div class="skill__description">
-                            <span>Java Spring Framework 4.0의 기본 문법을 익혔으며, Java Spring Framework 4.0를 활용판 프로젝트를 진행했습니다.  </span>
+                            <span>Java Spring Framework 4.0의 기본 문법을 익혔으며, Java Spring Framework 4.0를 활용한 프로젝트를 진행했습니다.  </span>
                         </div>
                     </div>
                     <div class="skill__content">
@@ -179,7 +180,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="updown"></div>
                 <div class="skillset__right">
                     <h3 class="skillset__title">Data</h3>
                     <div class="skill__content">
@@ -191,7 +191,7 @@
                             <div class="skill__value" style="width : 95%;"></div>
                         </div>
                         <div class="skill__description">
-                            <span>Database 기본 문법을 익히고 있으며,Data base를 활용한 플로젝트 진행, 현재 업무에서도 직접 개발중입니다.</span>
+                            <span>Database 기본 문법을 익히고 있으며,Data base를 활용한 프로젝트 진행, 현재 업무에서도 직접 개발중입니다.</span>
                         </div>
                     </div>
                     <div class="skill__content">
@@ -215,7 +215,7 @@
                             <div class="skill__value" style="width : 60%;"></div>
                         </div>
                         <div class="skill__description">
-                            <span>Pythono sklearn의 기본 문법 익히고, 데이터를 분류 알고리즘 및 예측모델을 활용해 프로젝트를 진행했었습니다. 현재 참고자료를 보면서 개발이 가능한 상태입니다.</span>
+                            <span>Python sklearn의 기본 문법 익히고, 데이터를 분류 알고리즘 및 예측모델을 활용해 프로젝트를 진행했었습니다. 현재 참고자료를 보면서 개발이 가능한 상태입니다.</span>
                         </div>
                     </div>
                 </div>
@@ -308,7 +308,7 @@
                         <div class="work__description">위 프로그램은 웹 크롤링을 통해 프로배구 10년의 프로배구 경기 데이터를 수집하여,
                             의사결정나무, 이항로지스틱 회귀, 인공신경망, 랜덤포레스트, 서포트 벡터 머신을 활용하여
                             프로배구 플레이오프에 진출 결정요인을 분석했으며, 남·여간의 결정요인의 차이가 있는지 통계적으로 증명한 프로그램입니다.</div>
-                        <div class="work__description">프로그래밍을 시작하게한 데이터분석을 실제로 구현해 본 프로젝트였으며,본 프로젝트를 구현하면서 자동 데이터수집 프로그래밍인 <b>Web crawler</b>와 각종 <b>데이터 분석 알고리즘 활용</b>, <b>통계모델로 유의성 검증</b>까지 활용했던 프로젝트입니다.</div>
+                        <div class="work__description">프로그래밍을 시작한 계기였던 데이터분석을 실제로 구현해 본 프로젝트였으며,본 프로젝트를 구현하면서 자동 데이터수집 프로그래밍인 <b>Web crawler</b>와 각종 <b>데이터 분석 알고리즘 활용</b>, <b>통계모델로 유의성 검증</b>까지 활용했던 프로젝트입니다.</div>
                         <div class="work__summary">
                             <div class="summary__title">✔주요기능</div>
                             <div class="summary__description">플레이오프 결정요인 분석, 남녀간 결정요인 차이분석</div>
@@ -343,8 +343,7 @@
                     <h2 class="companyName"><strong>(주)Cyberlogitec</strong></h2>
                     <h4>2019.08 - 현재</h4>
                     <p>해운항만 물류 IT 전문기업으로, 물류 전반에 걸쳐 세계 정상급 IT 솔루션과 첨단 시스템을 구축하는 솔루션 회사입니다.<br><br>
-                        선사와 선사, 선사와 터미널간의 업무 및 문서교환의 플랫폼 역할을 하는 CARA 솔루션의 <strong>웹 프로그래밍 개발자</strong>이며, Terminal performance와 International
-                        Marine Dangerous Goods관련 비즈니스 프로그램을 개발했습니다.<br>
+                        선사와 선사, 선사와 터미널간의 업무 및 문서교환의 플랫폼 역할을 하는 CARA 솔루션의 <strong>웹 프로그래밍 개발자</strong>이며, TPFREP(Terminal Performance)와 IMDG(International Mairne Dangerous Goods)관련 비즈니스 프로그램을 개발했습니다.<br>
                         <strong>Java Spring framework 기반의 풀 스택 웹 개발업무</strong>를 담당하고 있으며, <strong>배치프로그램/메일분류 시스템/Interface 기능</strong>을 부가적으로 담당하고 있습니다.
                     </p>
                     <br>
