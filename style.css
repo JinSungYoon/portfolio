@@ -18,15 +18,26 @@
   --color-pastels-blue: #71bee7;
   --color-pastels-purple: #8380b3;
   /* Font size */
-  --font-large: 48px;
-  --font-medium: 24px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
+  --font-xxx-large: 5rem;
+  --font-xx-large: 4.5rem;
+  --font-x-large: 4rem;
+  --font-large: 3.5rem;
+  --font-medium: 3rem;
+  --font-small: 2.5rem;
+  --font-x-small: 2rem;
+  --font-xx-small: 1.5rem;
+  --font-xxx-small: 1rem;
+
   /* Font weight */
-  --weight-bold: 700;
+  --weight-thin: 100;
+  --weight-extra-light: 200;
+  --weight-light: 300;
+  --weight-semi-light: 400;
+  --weight-medium: 500;
   --weight-semi-bold: 600;
-  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-Extra-bold: 800;
+  --weight-heavy: 900;
   /* Size */
   --size-border-radius: 4px;
   /* Annimation */
@@ -51,11 +62,7 @@ a {
 ul {
   padding-left: 0;
 }
-/*
-li {
-  list-style: none;
-}
-*/
+
 button {
   background-color: transparent;
   cursor: pointer;
@@ -71,28 +78,25 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: 8px 0;
 }
 
 h3 {
-  font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 8px 0;
 }
 
 h4 {
-  font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 8px 0;
 }
 
 p {
-  font-size: var(--font-regular);
+  font-size: var(--font-xx-small);
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
@@ -102,7 +106,7 @@ p {
 #navbar {
   display: flex; /* 박스가 양쪽에 나올 수 있도록*/
   justify-content: space-between; /* 중심축을 기준으로 정렬 */
-  background-color: var(--color-grey-skyblue);
+  background-color: #0a87d9;
   align-items: center; /* 수직축으로 가운데 정렬 */
   padding: 16px;
 }
@@ -112,7 +116,7 @@ p {
 }
 
 .navbar__logo {
-  font-size: var(--font-medium);
+  font-size: var(--font-xxx-small);
   font-weight: var(--font-medium);
 }
 
@@ -143,7 +147,7 @@ p {
 /* Home */
 
 #home {
-  background: url("images/background.jpeg") center/cover no-repeat;
+  background: url("images/background_image.png") center/cover no-repeat;
   padding: 40px;
   text-align: center;
 }
@@ -155,9 +159,15 @@ p {
   border: 2px solid var(--color-white);
 }
 
-.home__title,
+.home__title {
+  font-size: var(--font-xx-large);
+  color: var(--color-white);
+}
+
+.home__greeting,
 .home__description {
-  color: var(--color-dark-skyblue);
+  font-size: 30px;
+  color: var(--color-white);
   font-weight: var(--weight-semi-bold);
 }
 
@@ -184,40 +194,39 @@ section {
 }
 
 /* About */
-.about__majors {
-  display: flex; /* 박스가 양쪽에 나올 수 있도록*/
-  justify-content: space-evenly; /* 중심축을 기준으로 정렬 */
-  margin: 80px 0;
+.about__me {
+  display: flex;
+  margin: 40px 0px;
 }
 
-.major__icon {
-  width: 250px;
-  height: 250px;
-  line-height: 250px;
+.my__Infomation {
+  flex: 1;
+}
+
+.kakaotalk {
+  width: 5px;
+  height: 5px;
+  background: url("images/kakaoTalk.JPG");
+}
+
+.information__icon {
   font-size: 70px;
-  color: var(--color-pastels-blue);
-  margin: auto;
-  border: 1px solid var(--color-pastels-blue);
-  border-radius: 50%;
-  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: space-evenly;
 }
 
-.major__icon i {
-  transition: all var(--animation-duration) ease;
+.information {
+  margin: 0px 10px;
 }
 
-.major__icon i:hover {
-  color: var(--color-dark-skyblue);
-  transform: rotate(-30deg) scale(1.2);
+.information__title {
+  font-weight: var(--weight-Extra-bold);
 }
 
-.major__title,
-.major__description {
-  color: var(--color-dark-grey);
-}
-
-.major__description {
-  font-size: var(--font-small);
+.information__title,
+.information__description {
+  font-size: var(--font-xx-small);
 }
 
 /* Skills */
@@ -228,11 +237,18 @@ section {
 .skillset {
   display: flex;
   background-color: var(--color-dark-grey);
-  margin: auto;
+}
+
+.skillset__title {
+  font-size: var(--font-xx-small);
+}
+.skill__content {
+  font-size: 1.25rem;
+  margin: 20px 0px;
 }
 
 .skillset__title,
-.skill {
+.skill__content {
   color: var(--color-white);
 }
 .skill__ability {
@@ -256,19 +272,29 @@ section {
   background-color: var(--color-pastels-orange);
 }
 
+.skill__description {
+  text-align: left;
+}
+
 .skillset__left {
-  flex-basis: 33.3%;
+  flex-basis: 30%;
   background-color: var(--color-dark-grey);
+  flex: 1;
+  margin: 0px 10px;
 }
 
 .skillset__middle {
-  flex-basis: 33.3%;
+  flex-basis: 30%;
   background-color: var(--color-grey);
+  flex: 1;
+  margin: 0px 10px;
 }
 
 .skillset__right {
-  flex-basis: 33.3%;
+  flex-basis: 30%;
   background-color: var(--color-black);
+  flex: 1;
+  margin: 0px 10px;
 }
 
 /* Work */
@@ -307,31 +333,62 @@ section {
 }
 
 .work__projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  color: var(--color-white);
+  border-radius: 1rem;
+  background-color: var(--color-dark-skyblue);
+  margin: 15px 0px;
 }
 
-.project {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 450px;
-  height: 250px;
-  margin: 2px;
-  border-radius: 6%;
-  background-color: var(--color-pastels-blue);
+.work__title {
+  font-size: var(--font-small);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  padding: 25px 0px 0px 0px;
+}
+.work__duration {
+  font-size: var(--font-xxx-small);
+  font-weight: var(--weight-medium);
+  padding: 10px 0px 30px 0px;
 }
 
-.project:hover .project__description {
-  opacity: 0.8;
-  transform: translate(0px);
+.work__content {
+  display: flex;
+}
+
+.work__left {
+  flex-basis: 40%;
+}
+
+.work__right {
+  flex-basis: 60%;
+  text-align: justify; /* 양쪽정렬 */
+}
+
+.work__description {
+  font-size: 1.25rem;
+  padding: 5px 40px;
+}
+.work__summary {
+  display: flex;
+  padding: 5px 40px;
+}
+
+.summary__title {
+  font-size: var(--font-xx-small);
+  padding: 0px 75px 0px 0px;
+}
+
+.summary__description {
+  align-content: flex-start;
+  font-size: 1.25rem;
+  text-align: left;
 }
 
 .project__img {
+  width: 500px;
   max-width: 100%;
   max-height: 100%;
+  padding: 0px 0px 25px 0px;
 }
 
 .project__description {
@@ -364,6 +421,8 @@ section {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+
+/* Career */
 
 #career {
   background-color: #eeeeee;
@@ -408,12 +467,16 @@ section {
   margin-top: 20px;
 }
 
-.compayProject li {
-  list-style: url("/media/examples/rocket.svg");
-}
-
 .compayProject p {
   margin: 0px 0px 0px 100px;
+}
+
+.task__summary {
+  font-size: var(--font-xx-small);
+}
+
+.task__summary li {
+  padding-left: 30px;
 }
 
 /* Contact */
@@ -467,7 +530,7 @@ section {
     flex-direction: column;
   }
 
-  .project {
+  .work__projects {
     flex-grow: 1;
   }
 }
